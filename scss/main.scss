@@ -1,6 +1,31 @@
-$badass: #bada55;
+@import '_normalize';
+@import '_global';
+
+$blue: #62bebc;
+$orange: #ed9e49;
+$charcoal: #333534;
 
 body {
-  margin: 10px;
-  background-color: $badass;
+  margin: 0;
+  background-color: 'white';
+  color: $charcoal;
 }
+
+.hero {
+  background-color: $orange;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.title {
+  color: $charcoal;
+  font-size: 40px;
+}
+
+.lowercase {
+  font-size: 53px;
+  font-weight: 100;
+}
+
