@@ -1,2 +1,22 @@
 .about-author {
+  .author-image {
+    width: 100%;
+  }
+
+  .author-image-wrapper {
+    flex-basis: 45%;
+  }
+
+  .author-text {
+    flex-basis: 50%;
+
+    @media (min-width: $desktop-large) {
+      font-size: 1.3em;
+    }
+  }
+
+  .flex-container {
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }

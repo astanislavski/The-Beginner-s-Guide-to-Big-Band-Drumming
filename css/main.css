@@ -401,21 +401,38 @@ h1.title {
   .included .figure-image {
     width: 100%; }
 
-.short-notes {
+.sample {
   background-color: #333534;
   color: white; }
-  .short-notes img {
+  .sample img {
     width: 100%; }
-  .short-notes audio {
+  .sample audio {
     margin: 40px 0; }
-  .short-notes .audio-panel-wrapper {
+  .sample .audio-panel-wrapper {
     text-align: center; }
     @media (min-width: 1700px) {
-      .short-notes .audio-panel-wrapper {
+      .sample .audio-panel-wrapper {
         text-align: left; } }
 
+.about-author .author-image {
+  width: 100%; }
+
+.about-author .author-image-wrapper {
+  flex-basis: 45%; }
+
+.about-author .author-text {
+  flex-basis: 50%; }
+  @media (min-width: 1700px) {
+    .about-author .author-text {
+      font-size: 1.3em; } }
+
+.about-author .flex-container {
+  align-items: flex-end;
+  justify-content: space-between; }
+
 .dirty-socks {
-  background-color: #ed9e49; }
+  background-color: #ed9e49;
+  color: black; }
 
 .footer {
   min-height: 250px;
