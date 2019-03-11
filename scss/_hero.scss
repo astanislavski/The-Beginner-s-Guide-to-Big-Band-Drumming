@@ -1,10 +1,24 @@
 .hero {
-  padding: 1px 24px;
-  background-color: $orange;
+  background-color: white;
+}
 
-  @media (min-width: 750px) {
+.flex-container {
+  @media (min-width: $desktop-small) {
     display: flex;
   }
+}
+
+.max-width-container {
+  margin: 0 auto;
+  max-width: $desktop-small;
+
+  @media (min-width: $desktop-large) {
+    max-width: $desktop-large;
+  }
+}
+
+.hero-tile {
+  margin: 0 12px;
 }
 
 .hero-image-container {
@@ -13,23 +27,36 @@
 .hero-title-container {
 }
 
-.title {
+h1.title {
   color: $charcoal;
   font-size: 1.5em;
   text-align: center;
 
-  @media (min-width: 400px) {
+  @media (min-width: $phone) {
     font-size: 2em;
   }
 
-  @media (min-width: 750px) {
-    text-align: left;
-  }
-
-  @media (min-width: 1100px) {
-    text-align: left;
+  @media (min-width: $tablet) {
     font-size: 3em;
   }
+
+  @media (min-width: $desktop-small) {
+    text-align: left;
+    font-size: 2em;
+  }
+
+  @media (min-width: $desktop-large) {
+    font-size: 3em;
+  }
+}
+
+.cta {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #62bebc;
+  color: white;
+  font-size: 1.4em;
 }
 
 .heading-large {

@@ -306,27 +306,60 @@ template {
 html {
   font-family: 'Rubik', sans-serif; }
 
-.hero {
-  padding: 1px 24px;
-  background-color: #ed9e49; }
-  @media (min-width: 750px) {
-    .hero {
-      display: flex; } }
+body {
+  margin: 0;
+  background-color: 'white';
+  color: #333534; }
 
-.title {
+.panel {
+  min-height: 450px;
+  padding: 12px; }
+  @media (min-width: 750px) {
+    .panel {
+      padding: 24px; } }
+
+.hero {
+  background-color: white; }
+
+@media (min-width: 1100px) {
+  .flex-container {
+    display: flex; } }
+
+.max-width-container {
+  margin: 0 auto;
+  max-width: 1100px; }
+  @media (min-width: 1700px) {
+    .max-width-container {
+      max-width: 1700px; } }
+
+.hero-tile {
+  margin: 0 12px; }
+
+h1.title {
   color: #333534;
   font-size: 1.5em;
   text-align: center; }
   @media (min-width: 400px) {
-    .title {
+    h1.title {
       font-size: 2em; } }
   @media (min-width: 750px) {
-    .title {
-      text-align: left; } }
-  @media (min-width: 1100px) {
-    .title {
-      text-align: left;
+    h1.title {
       font-size: 3em; } }
+  @media (min-width: 1100px) {
+    h1.title {
+      text-align: left;
+      font-size: 2em; } }
+  @media (min-width: 1700px) {
+    h1.title {
+      font-size: 3em; } }
+
+.cta {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #62bebc;
+  color: white;
+  font-size: 1.4em; }
 
 .heading-large {
   font-size: 2em; }
@@ -339,7 +372,17 @@ html {
   line-height: 0.6;
   font-weight: 500; }
 
-body {
-  margin: 0;
-  background-color: 'white';
-  color: #333534; }
+.included {
+  background-color: #62bebc; }
+
+.short-notes {
+  background-color: #333534;
+  color: white; }
+
+.dirty-socks {
+  background-color: #ed9e49; }
+
+.footer {
+  min-height: 250px;
+  background-color: #333534;
+  color: white; }

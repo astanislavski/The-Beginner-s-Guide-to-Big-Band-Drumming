@@ -2,3 +2,18 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  margin: 0;
+  background-color: 'white';
+  color: $charcoal;
+}
+
+.panel {
+  min-height: 450px;
+  padding: 12px;
+
+  @media (min-width: $tablet) {
+    padding: 24px;
+  }
+}
+
