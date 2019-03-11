@@ -1,31 +1,11 @@
 @import '_normalize';
+@import '_variables';
 @import '_global';
-
-$blue: #62bebc;
-$orange: #ed9e49;
-$charcoal: #333534;
+@import '_hero';
 
 body {
   margin: 0;
   background-color: 'white';
   color: $charcoal;
-}
-
-.hero {
-  background-color: $orange;
-}
-
-.hero-image {
-  width: 100%;
-}
-
-.title {
-  color: $charcoal;
-  font-size: 40px;
-}
-
-.lowercase {
-  font-size: 53px;
-  font-weight: 100;
 }
 
