@@ -310,11 +310,15 @@ body {
   margin: 0;
   background-color: white;
   color: #333534; }
+  body h2 {
+    font-size: 3em; }
+    @media (min-width: 1700px) {
+      body h2 {
+        font-size: 4em; } }
 
 @media (min-width: 1100px) {
   .flex-container {
-    display: flex;
-    align-items: flex-end; } }
+    display: flex; } }
 
 .panel {
   min-height: 450px;
@@ -330,6 +334,8 @@ body {
     .hero {
       text-align: left;
       overflow: hidden; } }
+  .hero .flex-container {
+    align-items: flex-end; }
 
 .max-width-container {
   margin: 0 auto;
@@ -384,11 +390,6 @@ h1.title {
 
 .included {
   background-color: #62bebc; }
-  .included h2 {
-    font-size: 3em; }
-    @media (min-width: 1700px) {
-      .included h2 {
-        font-size: 4em; } }
   .included li {
     margin: 12px 0;
     font-size: 1.3em; }
@@ -399,12 +400,19 @@ h1.title {
         flex-basis: 50%; } }
   .included .figure-image {
     width: 100%; }
-  .included .flex-container {
-    align-items: initial; }
 
 .short-notes {
   background-color: #333534;
   color: white; }
+  .short-notes img {
+    width: 100%; }
+  .short-notes audio {
+    margin: 40px 0; }
+  .short-notes .audio-panel-wrapper {
+    text-align: center; }
+    @media (min-width: 1700px) {
+      .short-notes .audio-panel-wrapper {
+        text-align: left; } }
 
 .dirty-socks {
   background-color: #ed9e49; }

@@ -6,12 +6,19 @@ body {
   margin: 0;
   background-color: white;
   color: $charcoal;
+
+  h2 {
+    font-size: 3em;
+
+    @media (min-width: $desktop-large) {
+      font-size: 4em;
+    }
+  }
 }
 
 .flex-container {
   @media (min-width: $desktop-small) {
     display: flex;
-    align-items: flex-end;
   }
 }
 

@@ -1,14 +1,6 @@
 .included {
   background-color: $blue;
 
-  h2 {
-    font-size: 3em;
-
-    @media (min-width: $desktop-large) {
-      font-size: 4em;
-    }
-  }
-
   li {
     margin: 12px 0;
     font-size: 1.3em;
@@ -24,9 +16,5 @@
 
   .figure-image {
     width: 100%;
-  }
-
-  .flex-container {
-    align-items: initial;
   }
 }
