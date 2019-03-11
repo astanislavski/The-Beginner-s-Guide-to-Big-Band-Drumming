@@ -434,6 +434,12 @@ h1.title {
   background-color: #ed9e49;
   color: black; }
 
+.about-book {
+  background-color: #d3bcb8; }
+  @media (min-width: 1700px) {
+    .about-book .book-text p {
+      font-size: 1.3em; } }
+
 .footer {
   min-height: 250px;
   background-color: #333534;

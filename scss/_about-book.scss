@@ -1,0 +1,9 @@
+.about-book {
+  background-color: $mauve;
+
+  .book-text p {
+    @media(min-width: $desktop-large) {
+      font-size: 1.3em;
+    }
+  }
+}
