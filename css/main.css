@@ -308,22 +308,28 @@ html {
 
 body {
   margin: 0;
-  background-color: 'white';
+  background-color: white;
   color: #333534; }
+
+@media (min-width: 1100px) {
+  .flex-container {
+    display: flex;
+    align-items: flex-end; } }
 
 .panel {
   min-height: 450px;
   padding: 12px; }
   @media (min-width: 750px) {
     .panel {
-      padding: 24px; } }
+      padding: 60px 24px; } }
 
 .hero {
-  background-color: white; }
-
-@media (min-width: 1100px) {
-  .flex-container {
-    display: flex; } }
+  background-color: white;
+  text-align: center; }
+  @media (min-width: 1100px) {
+    .hero {
+      text-align: left;
+      overflow: hidden; } }
 
 .max-width-container {
   margin: 0 auto;
@@ -332,13 +338,9 @@ body {
     .max-width-container {
       max-width: 1700px; } }
 
-.hero-tile {
-  margin: 0 12px; }
-
 h1.title {
   color: #333534;
-  font-size: 1.5em;
-  text-align: center; }
+  font-size: 1.5em; }
   @media (min-width: 400px) {
     h1.title {
       font-size: 2em; } }
@@ -347,25 +349,33 @@ h1.title {
       font-size: 3em; } }
   @media (min-width: 1100px) {
     h1.title {
-      text-align: left;
-      font-size: 2em; } }
+      text-align: left; } }
   @media (min-width: 1700px) {
     h1.title {
-      font-size: 3em; } }
+      font-size: 4em; } }
 
 .cta {
+  display: inline-block;
   text-decoration: none;
   border-radius: 5px;
   padding: 20px;
   background-color: #62bebc;
   color: white;
-  font-size: 1.4em; }
+  font-size: 2em;
+  margin: 12px auto; }
 
 .heading-large {
   font-size: 2em; }
 
 .hero-image {
-  width: 100%; }
+  width: 100%;
+  margin: 24px 0; }
+  @media (min-width: 1100px) {
+    .hero-image {
+      text-align: left;
+      width: 130%;
+      margin: 0;
+      margin-left: -10%; } }
 
 .lowercase {
   font-size: 1.4em;
@@ -374,6 +384,23 @@ h1.title {
 
 .included {
   background-color: #62bebc; }
+  .included h2 {
+    font-size: 3em; }
+    @media (min-width: 1700px) {
+      .included h2 {
+        font-size: 4em; } }
+  .included li {
+    margin: 12px 0;
+    font-size: 1.3em; }
+  .included .list-wrapper {
+    order: 1; }
+    @media (min-width: 1700px) {
+      .included .list-wrapper {
+        flex-basis: 50%; } }
+  .included .figure-image {
+    width: 100%; }
+  .included .flex-container {
+    align-items: initial; }
 
 .short-notes {
   background-color: #333534;

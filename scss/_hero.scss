@@ -1,10 +1,10 @@
 .hero {
   background-color: white;
-}
+  text-align: center;
 
-.flex-container {
   @media (min-width: $desktop-small) {
-    display: flex;
+    text-align: left;
+    overflow: hidden;
   }
 }
 
@@ -17,20 +17,9 @@
   }
 }
 
-.hero-tile {
-  margin: 0 12px;
-}
-
-.hero-image-container {
-}
-
-.hero-title-container {
-}
-
 h1.title {
   color: $charcoal;
   font-size: 1.5em;
-  text-align: center;
 
   @media (min-width: $phone) {
     font-size: 2em;
@@ -42,21 +31,22 @@ h1.title {
 
   @media (min-width: $desktop-small) {
     text-align: left;
-    font-size: 2em;
   }
 
   @media (min-width: $desktop-large) {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 
 .cta {
+  display: inline-block;
   text-decoration: none;
   border-radius: 5px;
   padding: 20px;
   background-color: #62bebc;
   color: white;
-  font-size: 1.4em;
+  font-size: 2em;
+  margin: 12px auto;
 }
 
 .heading-large {
@@ -65,6 +55,14 @@ h1.title {
 
 .hero-image {
   width: 100%;
+  margin: 24px 0;
+
+  @media (min-width: $desktop-small) {
+    text-align: left;
+    width: 130%;
+    margin: 0;
+    margin-left: -10%;
+  }
 }
 
 .lowercase {
