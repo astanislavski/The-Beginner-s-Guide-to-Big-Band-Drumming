@@ -315,6 +315,15 @@ body {
     @media (min-width: 1700px) {
       body h2 {
         font-size: 4em; } }
+  body .cta-button {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #62bebc;
+    color: white;
+    font-size: 2em;
+    margin: 12px auto; }
 
 @media (min-width: 1100px) {
   .flex-container {
@@ -336,57 +345,44 @@ body {
       overflow: hidden; } }
   .hero .flex-container {
     align-items: flex-end; }
-
-.max-width-container {
-  margin: 0 auto;
-  max-width: 1100px; }
-  @media (min-width: 1700px) {
-    .max-width-container {
-      max-width: 1700px; } }
-
-h1.title {
-  color: #333534;
-  font-size: 1.5em; }
-  @media (min-width: 400px) {
-    h1.title {
-      font-size: 2em; } }
-  @media (min-width: 750px) {
-    h1.title {
-      font-size: 3em; } }
-  @media (min-width: 1100px) {
-    h1.title {
-      text-align: left; } }
-  @media (min-width: 1700px) {
-    h1.title {
-      font-size: 4em; } }
-
-.cta {
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: #62bebc;
-  color: white;
-  font-size: 2em;
-  margin: 12px auto; }
-
-.heading-large {
-  font-size: 2em; }
-
-.hero-image {
-  width: 100%;
-  margin: 24px 0; }
-  @media (min-width: 1100px) {
-    .hero-image {
-      text-align: left;
-      width: 130%;
-      margin: 0;
-      margin-left: -10%; } }
-
-.lowercase {
-  font-size: 1.4em;
-  line-height: 0.6;
-  font-weight: 500; }
+  .hero .max-width-container {
+    margin: 0 auto;
+    max-width: 1100px; }
+    @media (min-width: 1700px) {
+      .hero .max-width-container {
+        max-width: 1700px; } }
+  .hero h1.title {
+    color: #333534;
+    font-size: 1.5em; }
+    @media (min-width: 400px) {
+      .hero h1.title {
+        font-size: 2em; } }
+    @media (min-width: 750px) {
+      .hero h1.title {
+        font-size: 3em; } }
+    @media (min-width: 1100px) {
+      .hero h1.title {
+        text-align: left; } }
+    @media (min-width: 1700px) {
+      .hero h1.title {
+        font-size: 4em; } }
+  .hero p {
+    font-size: 1.3em; }
+  .hero .heading-large {
+    font-size: 2em; }
+  .hero .hero-image {
+    width: 100%;
+    margin: 24px 0; }
+    @media (min-width: 1100px) {
+      .hero .hero-image {
+        text-align: left;
+        width: 130%;
+        margin: 0;
+        margin-left: -10%; } }
+  .hero .lowercase {
+    font-size: 1.35em;
+    line-height: 0.6;
+    font-weight: 500; }
 
 .included {
   background-color: #62bebc; }
@@ -436,11 +432,48 @@ h1.title {
 
 .about-book {
   background-color: #d3bcb8; }
-  @media (min-width: 1700px) {
-    .about-book .book-text p {
-      font-size: 1.3em; } }
+  .about-book .book-text {
+    flex-basis: 50%; }
+    @media (min-width: 1700px) {
+      .about-book .book-text p {
+        font-size: 1.3em; } }
+  .about-book .open-book-image {
+    width: 100%; }
+  .about-book .open-book-image-wrapper {
+    flex-basis: 50%; }
+  .about-book .cta-button {
+    background-color: #ed9e49; }
+
+.digital-download .flex-container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center; }
+  @media (min-width: 750px) {
+    .digital-download .flex-container {
+      flex-direction: row;
+      text-align: left; } }
+  .digital-download .flex-container .card-image-wrapper {
+    flex-basis: 45%;
+    padding: 16px; }
+    .digital-download .flex-container .card-image-wrapper .card-image {
+      width: 100%; }
+  .digital-download .flex-container .download-wrapper {
+    flex-basis: 45%; }
+    .digital-download .flex-container .download-wrapper p {
+      font-size: 1.3em; }
 
 .footer {
   min-height: 250px;
   background-color: #333534;
-  color: white; }
+  color: white;
+  padding: 24px;
+  box-sizing: border-box; }
+  .footer img {
+    margin: 0 8px;
+    height: 48px;
+    width: 48px;
+    opacity: 1.0;
+    transition: opacity 0.3s; }
+  .footer img:hover {
+    opacity: 0.3; }
