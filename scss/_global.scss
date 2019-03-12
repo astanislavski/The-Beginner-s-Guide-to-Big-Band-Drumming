@@ -15,6 +15,30 @@ body {
     }
   }
 
+  .max-width-container {
+    margin: 0 auto;
+    max-width: $desktop-small;
+
+    @media (min-width: $desktop-large) {
+      max-width: $desktop-large;
+    }
+  }
+
+  .flex-container {
+    @media (min-width: $desktop-small) {
+      display: flex;
+    }
+  }
+
+  .panel {
+    min-height: 450px;
+    padding: 12px;
+
+    @media (min-width: $tablet) {
+      padding: 60px 24px;
+    }
+  }
+
   .cta-button {
     display: inline-block;
     text-decoration: none;
@@ -26,20 +50,5 @@ body {
     margin: 12px auto;
   }
 
-}
-
-.flex-container {
-  @media (min-width: $desktop-small) {
-    display: flex;
-  }
-}
-
-.panel {
-  min-height: 450px;
-  padding: 12px;
-
-  @media (min-width: $tablet) {
-    padding: 60px 24px;
-  }
 }
 

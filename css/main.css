@@ -315,6 +315,21 @@ body {
     @media (min-width: 1700px) {
       body h2 {
         font-size: 4em; } }
+  body .max-width-container {
+    margin: 0 auto;
+    max-width: 1100px; }
+    @media (min-width: 1700px) {
+      body .max-width-container {
+        max-width: 1700px; } }
+  @media (min-width: 1100px) {
+    body .flex-container {
+      display: flex; } }
+  body .panel {
+    min-height: 450px;
+    padding: 12px; }
+    @media (min-width: 750px) {
+      body .panel {
+        padding: 60px 24px; } }
   body .cta-button {
     display: inline-block;
     text-decoration: none;
@@ -325,17 +340,6 @@ body {
     font-size: 2em;
     margin: 12px auto; }
 
-@media (min-width: 1100px) {
-  .flex-container {
-    display: flex; } }
-
-.panel {
-  min-height: 450px;
-  padding: 12px; }
-  @media (min-width: 750px) {
-    .panel {
-      padding: 60px 24px; } }
-
 .hero {
   background-color: white;
   text-align: center; }
@@ -345,12 +349,6 @@ body {
       overflow: hidden; } }
   .hero .flex-container {
     align-items: flex-end; }
-  .hero .max-width-container {
-    margin: 0 auto;
-    max-width: 1100px; }
-    @media (min-width: 1700px) {
-      .hero .max-width-container {
-        max-width: 1700px; } }
   .hero h1.title {
     color: #333534;
     font-size: 1.5em; }
@@ -419,7 +417,7 @@ body {
 .about-author .author-text {
   flex-basis: 50%; }
   @media (min-width: 1700px) {
-    .about-author .author-text {
+    .about-author .author-text p {
       font-size: 1.3em; } }
 
 .about-author .flex-container {
@@ -433,10 +431,13 @@ body {
 .about-book {
   background-color: #d3bcb8; }
   .about-book .book-text {
-    flex-basis: 50%; }
-    @media (min-width: 1700px) {
-      .about-book .book-text p {
-        font-size: 1.3em; } }
+    flex-basis: 50%;
+    text-align: center; }
+    @media (min-width: 1100px) {
+      .about-book .book-text {
+        text-align: left; }
+        .about-book .book-text p {
+          font-size: 1.3em; } }
   .about-book .open-book-image {
     width: 100%; }
   .about-book .open-book-image-wrapper {

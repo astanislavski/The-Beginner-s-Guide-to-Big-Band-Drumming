@@ -11,15 +11,6 @@
     align-items: flex-end;
   }
 
-  .max-width-container {
-    margin: 0 auto;
-    max-width: $desktop-small;
-
-    @media (min-width: $desktop-large) {
-      max-width: $desktop-large;
-    }
-  }
-
   h1.title {
     color: $charcoal;
     font-size: 1.5em;

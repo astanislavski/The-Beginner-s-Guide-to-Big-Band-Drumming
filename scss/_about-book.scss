@@ -3,9 +3,12 @@
 
   .book-text {
     flex-basis: 50%;
+    text-align: center;
 
-    p {
-      @media(min-width: $desktop-large) {
+    @media (min-width: $desktop-small) {
+      text-align: left;
+
+      p {
         font-size: 1.3em;
       }
     }
