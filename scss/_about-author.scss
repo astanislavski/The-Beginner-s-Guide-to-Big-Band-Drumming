@@ -10,6 +10,12 @@
   .author-text {
     flex-basis: 50%;
 
+    @media (min-width: $desktop-small) {
+      p {
+        font-size: 1em;
+      }
+    }
+
     @media (min-width: $desktop-large) {
       p {
         font-size: 1.3em;
