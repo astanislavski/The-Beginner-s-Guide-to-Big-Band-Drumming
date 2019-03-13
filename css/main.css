@@ -368,7 +368,7 @@ body {
       .hero h1.title {
         font-size: 4em; } }
   .hero p {
-    font-size: 1.3em; }
+    font-size: 2em; }
   .hero .heading-large {
     font-size: 2em; }
   .hero .hero-image {
@@ -388,8 +388,10 @@ body {
 .included {
   background-color: #62bebc; }
   .included li {
-    margin: 12px 0;
-    font-size: 1.3em; }
+    margin: 12px 0; }
+    @media (min-width: 1100px) {
+      .included li {
+        font-size: 1.3em; } }
   .included .list-wrapper {
     order: 1; }
     @media (min-width: 1700px) {
@@ -446,18 +448,14 @@ body {
 
 .about-author .author-image-wrapper {
   flex-basis: 45%; }
+  @media (min-width: 1100px) {
+    .about-author .author-image-wrapper {
+      margin-top: 132px; } }
 
 .about-author .author-text {
   flex-basis: 50%; }
-  @media (min-width: 1100px) {
-    .about-author .author-text p {
-      font-size: 1em; } }
-  @media (min-width: 1700px) {
-    .about-author .author-text p {
-      font-size: 1.3em; } }
 
 .about-author .flex-container {
-  align-items: flex-end;
   justify-content: space-between; }
 
 .dirty-socks {

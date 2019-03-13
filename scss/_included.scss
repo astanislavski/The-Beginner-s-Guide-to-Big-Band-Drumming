@@ -3,7 +3,10 @@
 
   li {
     margin: 12px 0;
-    font-size: 1.3em;
+
+    @media (min-width: $desktop-small) {
+      font-size: 1.3em;
+    }
   }
 
   .list-wrapper {
