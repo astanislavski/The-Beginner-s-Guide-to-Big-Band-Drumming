@@ -385,6 +385,14 @@ body {
     line-height: 0.6;
     font-weight: 500; }
 
+.quote.panel {
+  min-height: 0; }
+  .quote.panel .flex-container.max-width-container {
+    flex-direction: column; }
+    .quote.panel .flex-container.max-width-container .quote-wrapper {
+      font-style: italic;
+      width: 50%; }
+
 .included {
   background-color: #62bebc; }
   .included li {

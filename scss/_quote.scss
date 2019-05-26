@@ -1,0 +1,16 @@
+.quote.panel {
+  min-height: 0;
+
+  .flex-container.max-width-container {
+    // max-width: 700px;
+    flex-direction: column;
+
+    .quote-wrapper {
+      font-style: italic;
+      width: 50%;
+    }
+
+    .attribute-wrapper {
+    }
+  }
+}
