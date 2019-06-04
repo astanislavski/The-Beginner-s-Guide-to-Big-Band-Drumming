@@ -303,37 +303,35 @@ template {
 [hidden] {
   display: none; }
 
-html {
-  font-family: 'Rubik', sans-serif; }
-
-body {
+html body {
   margin: 0;
   background-color: white;
-  color: #333534; }
-  body h2 {
+  color: #333534;
+  font-family: 'Rubik', sans-serif; }
+  html body h2 {
     font-size: 3em; }
     @media (min-width: 1700px) {
-      body h2 {
+      html body h2 {
         font-size: 4em; } }
   @media (min-width: 1100px) {
-    body p {
+    html body p {
       font-size: 1.3em; } }
-  body .max-width-container {
+  html body .max-width-container {
     margin: 0 auto;
     max-width: 1100px; }
     @media (min-width: 1700px) {
-      body .max-width-container {
+      html body .max-width-container {
         max-width: 1700px; } }
   @media (min-width: 1100px) {
-    body .flex-container {
+    html body .flex-container {
       display: flex; } }
-  body .panel {
+  html body .panel {
     min-height: 450px;
     padding: 12px; }
     @media (min-width: 750px) {
-      body .panel {
+      html body .panel {
         padding: 60px 24px; } }
-  body .cta-button {
+  html body .cta-button {
     display: inline-block;
     text-decoration: none;
     border-radius: 5px;
