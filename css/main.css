@@ -385,13 +385,29 @@ body {
     line-height: 0.6;
     font-weight: 500; }
 
-.quote.panel {
-  min-height: 0; }
-  .quote.panel .flex-container.max-width-container {
-    flex-direction: column; }
-    .quote.panel .flex-container.max-width-container .quote-wrapper {
-      font-style: italic;
-      width: 50%; }
+.carousel.panel {
+  min-height: 0;
+  background-color: #333534;
+  color: white; }
+  .carousel.panel .flex-container.max-width-container {
+    justify-content: center; }
+    .carousel.panel .flex-container.max-width-container .carousel {
+      width: 100%; }
+    .carousel.panel .flex-container.max-width-container .carousel-item {
+      height: 400px;
+      width: 100%; }
+      .carousel.panel .flex-container.max-width-container .carousel-item .quote-wrapper {
+        font-style: italic;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .carousel.panel .flex-container.max-width-container .carousel-item .quote-wrapper .quote-text {
+          max-width: 700px; }
+        .carousel.panel .flex-container.max-width-container .carousel-item .quote-wrapper .quote-attribute {
+          font-weight: 600;
+          max-width: 700px; }
 
 .included {
   background-color: #62bebc; }

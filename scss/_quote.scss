@@ -1,16 +1,36 @@
-.quote.panel {
+.carousel.panel {
   min-height: 0;
+  background-color: $charcoal;
+  color: white;
 
   .flex-container.max-width-container {
-    // max-width: 700px;
-    flex-direction: column;
+    justify-content: center;
 
-    .quote-wrapper {
-      font-style: italic;
-      width: 50%;
+    .carousel {
+      width: 100%;
     }
 
-    .attribute-wrapper {
+    .carousel-item {
+      height: 400px;
+      width: 100%;
+
+      .quote-wrapper {
+        font-style: italic;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .quote-text {
+          max-width: 700px;
+        }
+
+        .quote-attribute {
+          font-weight: 600;
+          max-width: 700px;
+        }
+      }
     }
   }
 }
